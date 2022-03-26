@@ -1,3 +1,5 @@
+# ![MarkWeb Logo](./markweb.svg)
+
 # MarkWeb
 MarkWeb is a less distracting alternative to the modern web
 
