@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>MarkWeb - The plain text alternative</title>
+</head>
+<body>
+<pre id="markdown">
+
+```
+   _     _
+ _| |   | |_
+|_   \_/   _|
+  | |\_/| |
+ _| |   | |_
+|_  |   |  _|
+  |_|   |_|
+
+```
+# MarkWeb
+Did you see the text flashing when you loaded the website? That was the page being translated from `markdown` to `HTML`. If you don't have `javascript` enabled in your browser you didn't see the flash, but instead got to see the plain `markdown` in all it's beauty!
+
+---
+
+## Text formatting 
+**All** the *common* [markdown](https://en.wikipedia.org/wiki/Markdown) ~~text~~ formatting ***works***!
+
+## Lists
+
+- Does it handle lists?
+- Yes! Yes, it does.
+1. Even
+2. More
+3. Lists
+- [ ] To do
+- [x] Done
+
+## Tables
+  
+| Some data | Other data |
+|-----------|------------|
+| 124       | 828        |
+| 11        | 22         |
+| 32        | 8          |
+
+## Block quotes
+
+> ### Heading in  quote
+> `code` in quoute
+
+
+## Preformated text
+```
+## Text formatting 
+**All** the *common* [markdown](https://en.wikipedia.org/wiki/Markdown) ~~text~~ formatting ***works***!
+
+## Lists
+
+- Does it handle lists?
+- Yes! Yes, it does.
+1. Even
+2. More
+3. Lists
+- [ ] To do
+- [x] Done
+
+## Tables
+  
+| Some data | Other data |
+|-----------|------------|
+| 124       | 828        |
+| 11        | 22         |
+| 32        | 8          |
+
+## Block quotes
+
+> ### Heading in  quote
+> `code` in quoute
+```
+
+## Images
+![markweb logo](markweb.svg)
+---
+
+
+</pre>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+var element = document.createElement("link");
+element.setAttribute("rel", "stylesheet");
+element.setAttribute("type", "text/css");
+element.setAttribute("href", "style.css");
+document.getElementsByTagName("head")[0].appendChild(element);
+document.body.innerHTML = marked.parse(document.getElementById("markdown").innerText.toString())
+</script>
+</body>
+</html>
