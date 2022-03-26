@@ -22,7 +22,8 @@ I've created a minimal [demo website](https://1jss.github.io/markweb/) where the
 </pre>
  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><!-- Include markdown parser -->
  <script>
-  document.body.innerHTML = marked.parse(document.getElementById("markdown").innerText.toString()) <!-- Replaces <body> content (including the parser) with parsed markdown from the element with the id "markdown" -->
+  document.body.innerHTML = marked.parse(document.getElementById("markdown").innerText.toString())
+  /* Replaces <body> content (including the parser) with parsed markdown from the element with the id "markdown" */
  </script>
  </body>
 </html>
